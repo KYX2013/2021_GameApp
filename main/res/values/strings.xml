@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="start">New game</string>
+    <string name="load">Continue</string>
+    <string name="reset">重新遊戲</string>
+    <string name="exit">結束遊戲</string>
+</resources>
