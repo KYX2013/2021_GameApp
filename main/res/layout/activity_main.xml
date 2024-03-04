@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Chose The GAME"
+        android:textColor="#2783B5"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/SnakeButton"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/appbar_scrolling_view_behavior"
+                android:drawableBottom="@drawable/screenshot_from_2020_11_11_16_02_23"
+                android:gravity="center|top"
+                android:scaleType="fitEnd"
+                android:text="GreedySnake"
+                android:textColor="#E8C559"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:backgroundTint="#878787" />
+
+            <Button
+                android:id="@+id/bottleButton"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/appbar_scrolling_view_behavior"
+                android:drawableBottom="@drawable/bottle_cover"
+                android:gravity="center|top"
+                android:scaleType="fitEnd"
+                android:text="Bottle"
+                android:textColor="#64F15F"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:backgroundTint="#878787" />
+
+            <Button
+                android:id="@+id/brickButton"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/appbar_scrolling_view_behavior"
+                android:drawableBottom="@drawable/brick"
+                android:gravity="center|top"
+                android:scaleType="fitEnd"
+                android:text="Brick"
+                android:textColor="#60A0ED"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:backgroundTint="#878787" />
+
+            <Button
+                android:id="@+id/memoryButton"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/appbar_scrolling_view_behavior"
+                android:drawableBottom="@drawable/memory"
+                android:gravity="center|top"
+                android:scaleType="fitEnd"
+                android:text="Memory"
+                android:textColor="#ED6096"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:backgroundTint="#878787" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
